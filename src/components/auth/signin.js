@@ -33,6 +33,6 @@ function mapStateToProps(state) {
     return { state }
 }
 
+Signin = reduxForm({form: "signin"})(Signin);
 
-Signin = reduxForm({form: "siginin"})(Signin)
-export default connect(mapStateToProps, actions)(Signin); 
+export default connect(mapStateToProps, actions)(Signin);
